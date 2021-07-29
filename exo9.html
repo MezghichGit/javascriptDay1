@@ -1,0 +1,37 @@
+<html>
+
+<head>
+
+    <script language="javascript" type="text/javascript">
+
+        function check()
+        {
+           
+            var index = document.first.prog.selectedIndex;
+            var element = document.first.prog.options[index].value;
+            var text = document.first.prog.options[index].text;
+                alert("Vous maitriser :"+ element + " "+text);
+        
+        
+        } 
+    </script>
+
+</head>
+
+<body>
+
+    <form name="first">
+        Choisir un langage de programmation :
+        <select name="prog">
+             <option value="html">HTML</option>
+             <option value="css">CSS</option>
+             <option value="javascript">Javascript</option>
+        </select>
+        <input type="button" value="Valider" onclick="check()"/>
+    </form>
+
+   
+</body>
+
+
+</html>

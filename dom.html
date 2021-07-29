@@ -1,0 +1,39 @@
+<html>
+
+<head>
+
+    <script language="javascript" type="text/javascript">
+
+        function info()
+        {
+            var mot = document.forms[0].formation.value;
+            alert(mot);
+        }
+
+        function info2()
+        {
+            var mot = document.forms[1].formation2.value;
+            alert(mot);
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <form name="first">
+        Valeur : <input type="text" name="formation"/>
+
+        <input type="button" value="Cliquer" onclick="info()"/>
+    </form>
+
+    <form name="second">
+        Valeur : <input type="text" name="formation2"/>
+
+        <input type="button" value="Cliquer une autre fois" onclick="info2()"/>
+    </form>
+
+</body>
+
+
+</html>

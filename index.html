@@ -19,7 +19,7 @@
     <button onclick="affichage()">Cliquer ici</button>
     <br/><br/><br/>
 
-    <div style="border: dotted 2px red;" onmouseenter="debut()" onmouseleave="fin()">
+    <div style="border: dashed 2px red;" onmouseenter="debut()" onmouseleave="fin()">
 
         <ul>
             <li>Javascript native</li>
@@ -30,6 +30,10 @@
 
     <script language="javascript" type="text/javascript">
 
+        var langage ="javascript";
+        //alert(langage.length);
+
+        alert(langage.substring(6,11));
         // Les boites de dialogues
 
         //var nom = prompt("Donner un nom","votre nom ici");

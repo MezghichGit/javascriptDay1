@@ -1,0 +1,36 @@
+<html>
+
+<head>
+
+    <script language="javascript" type="text/javascript">
+
+        function check()
+        {
+            var compteur;
+            var nbr = document.first.languages.length;
+
+            for(compteur=0; compteur<nbr; compteur++)
+            {
+                if(document.first.languages[compteur].checked)
+                alert("Vous maitriser :"+ document.first.languages[compteur].value)
+            }
+        
+        } 
+    </script>
+
+</head>
+
+<body>
+
+    <form name="first">
+        HTML : <input type="checkbox" name="languages" value="html"/> <br/>
+        CSS : <input type="checkbox" name="languages" value="css"/> <br/>
+        Javascript : <input type="checkbox" name="languages" value="javascript"/> <br/>
+        <input type="button" value="Valider" onclick="check()"/>
+    </form>
+
+   
+</body>
+
+
+</html>

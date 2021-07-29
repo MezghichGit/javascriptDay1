@@ -1,0 +1,36 @@
+<html>
+
+<head>
+
+    <script language="javascript" type="text/javascript">
+
+        function check()
+        {
+            var compteur;
+            var nbr = document.first.choix.length;
+
+            for(compteur=0; compteur<nbr; compteur++)
+            {
+                if(document.first.choix[compteur].checked)
+                alert("Vous maitriser :"+ document.first.choix[compteur].value)
+            }
+        
+        } 
+    </script>
+
+</head>
+
+<body>
+
+    <form name="first">
+        HTML : <input type="radio" name="choix" value="html"/> <br/>
+        CSS : <input type="radio" name="choix" value="css"/> <br/>
+        Javascript : <input type="radio" name="choix" value="javascript"/> <br/>
+        <input type="button" value="Valider" onclick="check()"/>
+    </form>
+
+   
+</body>
+
+
+</html>
